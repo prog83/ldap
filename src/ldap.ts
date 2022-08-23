@@ -27,7 +27,7 @@ const bind = (client: ldap.Client, dn: string, password: string): Promise<void> 
 
 export const authenticate = async (client: ldap.Client, user: string, password: string) => {
   try {
-    await bind(client, `uid=${user},ou=users1,dc=dotm`, password);
+    await bind(client, `uid=${user},ou=users,dc=dotm`, password);
   } catch (error) {
     if (error instanceof ldap.InvalidCredentialsError) {
       throw new Error('InvalidCredentials');
