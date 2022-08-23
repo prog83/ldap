@@ -1,0 +1,29 @@
+* text=auto eol=lf
+
+# Text
+*.html text
+*.css text
+*.scss text
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.json text
+*.md text
+*.svg text
+
+# Binary files
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.wasm
+
+# Windows files
+*.sln text eol=crlf
+*.bat text eol=crlf
+

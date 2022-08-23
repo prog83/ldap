@@ -1,0 +1,25 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:jest/recommended",
+    "plugin:promise/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "jest", "promise"],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "no-underscore-dangle": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "jest/expect-expect": ["error", { "assertFunctionNames": ["expect", "request.**.expect"] }]
+  }
+}
